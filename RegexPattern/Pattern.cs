@@ -12,7 +12,8 @@ namespace RegexPattern
         public void ValidateEMail(string eMail)
         {
             // Part2: ensure @ and validate mandatory part bridgelabz
-            var regex = new Regex(@"^([a][b][c])\@([b][r][i][d][g][e][l][a][b][z])");
+            // Part3: ensure dot after bridgelabz and validate mandatory part co
+            var regex = new Regex(@"^([a][b][c])\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])");
             bool matchRes = regex.IsMatch(eMail);
             if (matchRes == true)
             {
