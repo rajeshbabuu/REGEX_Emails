@@ -15,7 +15,8 @@ namespace RegexPattern
             // Part3: ensure dot after bridgelabz and validate mandatory part co
 
             // Part4: optional part xyz, validate special characters _,+,-,. proceeding to xyz
-            var regex = new Regex(@"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])*$");
+            // Part5: dot and optional country code and its 2 characters only after co
+            var regex = new Regex(@"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])\.([a-z]{2})*$");
             bool matchRes = regex.IsMatch(eMail);
             if (matchRes == true)
             {
