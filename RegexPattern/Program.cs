@@ -7,7 +7,7 @@
             Console.WriteLine("Welcome to Regular Expressions");
 
             Pattern objPattern = new Pattern();
-            objPattern.ValidateEMail("abc");
+            objPattern.ValidateEMail("abc@bridgelabz");
         }
     }
 }
